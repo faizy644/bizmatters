@@ -64,6 +64,7 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 hr {
@@ -573,7 +574,15 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
+.img-services{
+	max-width: 100%;
+  height: auto;
+}
+@media (max-width: 600px){
+   .img-services{
+   display:none;	
+}
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -10974,6 +10983,11 @@ textarea.form-control-lg {
   padding: 0;
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
+@media (max-width:770px){
+.testimonials{
+	display:none;
+}
+}
 .testimonials__card {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem 1rem;
@@ -11017,7 +11031,7 @@ textarea.form-control-lg {
 }
 
 .portfolio {
-  padding: 4rem 0;
+  padding: 2rem;
 }
 .portfolio button {
   text-transform: capitalize;
@@ -11053,7 +11067,7 @@ textarea.form-control-lg {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.portfolio-box .portfolio-info .caption h4 {
+.portfolio-box .portfolio-info .caption h2 {
   text-transform: uppercase;
   display: block;
 }
