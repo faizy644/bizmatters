@@ -11045,10 +11045,13 @@ textarea.form-control-lg {
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid #c685f7;
+  
+  
 }
 .portfolio-box img {
   width: 100%;
   height: 100%;
+
 }
 .portfolio-box .portfolio-info {
   background-color: rgba(153, 38, 240, 0.75);
@@ -11057,8 +11060,10 @@ textarea.form-control-lg {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+   opacity: 1;
   visibility: visible;
+  transition-duration: 1s;
+  transition-property: all;
 }
 .portfolio-box .portfolio-info .caption {
   text-align: center;
@@ -11072,10 +11077,11 @@ textarea.form-control-lg {
   text-transform: uppercase;
   display: block;
 }
-.portfolio-box:hover img {
-  transform: scale(1.5);
+.portfolio-box1:hover img {
+  transform: scale(0);
   transition-duration: 1s;
   transition-property: all;
+
 }
 .portfolio-box:hover .portfolio-info {
   opacity: 1;
